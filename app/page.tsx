@@ -6,11 +6,6 @@ export const metadata: Metadata =
   title: "Build Buddy",
   keywords: [""],
   description: "",
-  viewport:
-  {
-    width: "device-width",
-    initialScale: 1
-  },
   authors:
   {
     name: "Syed Muhammad Khizer",
@@ -33,7 +28,6 @@ export default function Page(): JSX.Element
 {
   return (
     <>
-      <h1> Hello World </h1>
     </>
   );
 }
