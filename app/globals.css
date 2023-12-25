@@ -2,26 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* Default */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span
+{
+  cursor: default;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+a
+{
+  cursor: pointer;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+button
+{
+  outline: none;
+}
+
+input
+{
+  outline: none;
+}
+
+/* Scale */
+.scale
+{
+  transition: all 150ms ease-in;
+}
+
+.scale:hover
+{
+  transform: scale(0.95);
+}
+
+.scale:focus
+{
+  transform: scale(0.95);
+}
+
+.scale:active
+{
+  transform: scale(0.90);
 }
