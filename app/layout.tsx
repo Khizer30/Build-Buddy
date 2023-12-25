@@ -1,3 +1,5 @@
+import "@fontsource/bebas-neue";
+import "@fontsource/lato";
 //
 import { type Children } from "@lib/Interface";
 import "./globals.css";

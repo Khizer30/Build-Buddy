@@ -16,7 +16,8 @@ const config: Config =
     },
     fontFamily:
     {
-      primary: ["", ""]
+      primary: ["Bebas Neue", "sans-serif"],
+      secondary: ["Lato", "sans-serif"]
     },
     container:
     {
