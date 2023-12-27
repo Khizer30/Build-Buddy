@@ -42,7 +42,7 @@ export default function Page(): JSX.Element
             src={ logo }
             alt="Build Buddy"
             draggable="false"
-            className=" w-20 h-20 scale"
+            className=" w-20 h-20"
           />
         </div>
 
@@ -50,9 +50,9 @@ export default function Page(): JSX.Element
           <h1 className=" font-secondary text-2xl md:text-3xl text-white"> Select an Account </h1>
           <div className=" my-4 grid grid-cols-2 md:grid-cols-3">
 
-            <Hero title="Beginner's Account" link="" image={ profileImg1 } />
-            <Hero title="Intermediate's Account" link="" image={ profileImg2 } />
-            <Hero title="Professional's Account" link="" image={ profileImg3 } />
+            <Hero title="Beginner's Account" link="/menu" image={ profileImg1 } />
+            <Hero title="Intermediate's Account" link="/menu" image={ profileImg2 } />
+            <Hero title="Professional's Account" link="/menu" image={ profileImg3 } />
 
           </div>
         </div>
