@@ -11,8 +11,8 @@ import profileImg3 from "@images/profile_3.webp";
 export const metadata: Metadata =
 {
   title: "Build Buddy",
-  keywords: [""],
-  description: "",
+  keywords: ["Build Buddy. We Build It!"],
+  description: "Build Buddy. We Build It!",
   authors:
   {
     name: "Syed Muhammad Khizer",
