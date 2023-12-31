@@ -47,7 +47,7 @@ export default function Page(): JSX.Element
         </div>
 
         <div className=" h-[87vh] p-4 flex flex-col justify-center items-center">
-          <h1 className=" font-secondary text-2xl md:text-3xl text-white"> Select an Account </h1>
+          <h1 className=" font-primary text-2xl md:text-3xl text-white"> Select an Account </h1>
           <div className=" my-4 grid grid-cols-2 md:grid-cols-3">
 
             <Hero title="Beginner's Account" link="/menu" image={ profileImg1 } />

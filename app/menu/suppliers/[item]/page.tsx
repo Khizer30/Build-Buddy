@@ -2,13 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { type Metadata } from "next";
 //
-import Options from "@components/Options";
+import Form from "@components/Form";
 import logo from "@images/logo_dark.webp";
 
 // Metadata
 export const metadata: Metadata =
 {
-  title: "Build Buddy | Menu",
+  title: "Build Buddy",
   keywords: ["Build Buddy. We Build It!"],
   description: "Build Buddy. We Build It!",
   authors:
@@ -28,8 +28,14 @@ export const metadata: Metadata =
   }
 };
 
+// Props
+interface Props
+{
+  params: { item: string; };
+}
+
 // Page
-export default function Page(): JSX.Element
+export default function Page({ params }: Props): JSX.Element
 {
   return (
     <>
@@ -43,14 +49,14 @@ export default function Page(): JSX.Element
             className=" w-20 h-20"
           />
 
-          <Link href="/" className=" w-20 md:w-28 h-10 flex justify-center items-center font-primary font-semibold text-sm md:text-base text-white hover:text-black border-2 rounded-md hover:bg-white transition-all duration-500">
-            Log Out
+          <Link href="/menu" className=" w-20 md:w-28 h-10 flex justify-center items-center font-primary font-semibold text-sm md:text-base text-white hover:text-black border-2 rounded-md hover:bg-white transition-all duration-500">
+            Back
           </Link>
         </div>
 
         <div className=" h-[87vh] p-4 flex flex-col justify-center items-center">
-          <h1 className=" font-primary text-2xl md:text-3xl text-white"> What are you looking for? </h1>
-          <Options />
+          <h1 className=" font-primary text-2xl md:text-3xl text-white"> { params.item } </h1>
+          <Form type={ params.item } />
         </div>
 
       </div>

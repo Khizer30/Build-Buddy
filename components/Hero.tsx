@@ -24,7 +24,7 @@ export default function Hero({ title, link, image }: Props): JSX.Element
             className=" w-32 md:w-48 h-32 md:h-48 rounded cursor-pointer scale"
           />
         </Link>
-        <h6 className=" my-4 md:my-6 font-secondary text-center text-sm md:text-base text-white"> { title } </h6>
+        <h6 className=" my-4 md:my-6 font-primary text-center text-sm md:text-base text-white"> { title } </h6>
       </div>
     </>
   );
