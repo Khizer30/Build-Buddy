@@ -7,7 +7,10 @@ const detailsDefaults =
   "architect": "i.e. I have a plot of land and I want to hire an architect...",
   "information": "i.e. I want to get information about...",
   "cement": "i.e. I would like to request a formal quotation for 30 tonnes of Fauji cement...",
-  "metal": "i.e. I'd like to get a quote for purchasing aluminum sheets..."
+  "metal": "i.e. I'd like to get a quote for purchasing aluminum sheets...",
+  "appliances": "i.e. I'm looking for a new TV on a budget of...",
+  "furniture": "i.e. Looking for a sofa that's as good for my posture...",
+  "wiring": "i.e. I need an electrician to install..."
 };
 
 // Props
